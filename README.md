@@ -1,1 +1,0 @@
-# Wit0624-Sprint6-DersNotlar-
