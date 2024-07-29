@@ -31,3 +31,10 @@
     </script>
     
 */
+
+function Title() {
+  return <h1>Hi, React!</h1>;
+}
+const container = document.getElementById("app");
+const root = ReactDom.createRoot(container);
+root.render(<Title />);
