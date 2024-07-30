@@ -75,7 +75,7 @@ onClick ile nasıl çalışılır ?
 
 */
 
-const fonksiyon () =>{
+function HESAP () =>{
 
   console.log("merhaba")
 }
