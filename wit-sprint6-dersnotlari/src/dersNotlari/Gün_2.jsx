@@ -29,3 +29,43 @@ import Profile from ".gallery";
 
 export function Profile() {}
 import { Profile } from ".galley";
+
+//Module bundler
+//Kodu oprtimize eder, gereksiz kodları kaldırır(tree shaking), kodu küçültür.
+
+//Props Kavramı !!!!!
+/*
+Component ;: Yeniden kullanabilir kod parçası
+State: Componentların Hafızası
+Props: Componenlar arası veri paylaşımı 
+-HTML elemanlarındaki attribute konseptine benzer 
+-Fonksiyonlardaki parametre kullanımına benzer.
+-Her parent component , child componentına porps vererek onlara bazı bilgiler verir.
+-HTML Attribute larını kapsar .
+-Obje, dizi ve fonksiyonlar aktarılabilir .
+
+*/
+
+function Avatar({ person, size }) {}
+function Avatar(props) {
+  let person = props.person;              // Bu iki gösterimde aynı , yukarıdaki destructiring diye geçiyor.
+  let size = props.size;
+  //:..
+}
+
+/*
+HTML elemanlarının sahip oldukları html sttributeları 
+bizim tanımladığımız porplar 
+children propu
+-Component tagları arasında kalan kısım 
+<title>SelamDünya!</title> children propu "selam dünya "
+Proplar child componenları içinde sadece okunabilir , değiştirilemez.
+
+*/
+
+/*
+Veri akışı parent dan child a doğru akar.
+Childlarda olan verileri parenta taşımak : STATE KALDIRMAK DENİR.
+TEK YÖLÜ AKIŞIN YÖNETİLEBİLMESİ DAHA KOLAYDIR.
+
+*/
